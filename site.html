@@ -30,12 +30,25 @@
     </ul>
   </section>
 
-  <!-- Partie 4 : Capacité opérationnelle -->
-  <section class="capacite">
-    <h2>Capacité opérationnelle</h2>
-    <p>Une équipe pluridisciplinaire, une flotte d'engins et une disponibilité 24/7 garantissent la réussite de vos projets.</p>
-  </section>
+  <!-- Partie 4 : Capacité opérationnelle (Carousel) -->
+<section class="capacite">
+  <h2>Capacité opérationnelle</h2>
+  <p>Une équipe pluridisciplinaire, une flotte d'engins et une disponibilité 24/7 garantissent la réussite de vos projets.</p>
 
+  <div class="carousel-container">
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <div class="carousel-slide">
+      <img src="./LES IMAGES DE TRAVAUX/02db064a-9534-408a-9956-5fab1beec443-e1743671367678-768x585.jpg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/428da20b-173f-4987-9a0d-5041ae936510-1-e1743671134384.jpg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/5a1a1417-d0a9-47ba-a79a-5fb2484db1ca-e1744065301772-768x565.jpg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/6d580da7-31aa-4496-a054-b7a5743fbca1-e1744065502235-768x614.jpg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/39-768x594.jpg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/53.43-768x576.jpeg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/width_800-4-768x434.jpg" alt="">
+    </div>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+</section>
   <!-- Partie 5 : Grandes dates -->
   <section class="dates">
     <h2>Les grandes dates</h2>
@@ -76,12 +89,34 @@
   </section>
 
   <!-- Partie 10 : Contact et footer -->
-  <footer class="contact">
+  <footer class="contact" style="background-color: blue;">
     <h2>Contact</h2>
     <p><strong>MFES CI :</strong> +225 2735 9880 25 / Marcory, Abidjan</p>
     <p><strong>MFES USA :</strong> 30 N Gould St, Sheridan, WY</p>
     <p>&copy; 2025 MARC & FERHOLE ENGINEERING SARL / MFES</p>
   </footer>
   <a href="./HTML/index.html"></a>
+  <script>
+    let slideIndex = 0;
+    const slideContainer = document.querySelector('.carousel-slide');
+    const images = document.querySelectorAll('.carousel-slide img');
+    const totalSlides = images.length;
+  
+    function plusSlides(n) {
+      slideIndex += n;
+      if (slideIndex >= totalSlides) slideIndex = 0;
+      if (slideIndex < 0) slideIndex = totalSlides - 1;
+      updateSlidePosition();
+    }
+  
+    function updateSlidePosition() {
+      const offset = -slideIndex * 100;
+      slideContainer.style.transform = `translateX(${offset}%)`;
+    }
+  
+    // Auto-slide (optionnel)
+    setInterval(() => plusSlides(1), 5000);
+  </script>
+  
 </body>
 </html>
