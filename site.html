@@ -33,21 +33,19 @@
   <!-- Partie 4 : Capacité opérationnelle (Carousel) -->
 <section class="capacite">
   <h2>Capacité opérationnelle</h2>
-  <p>Une équipe pluridisciplinaire, une flotte d'engins et une disponibilité 24/7 garantissent la réussite de vos projets.</p>
+  <p>Une équipe pluridisciplinaire, une flotte d'engins et une disponibilité 24/7 garantissent la réussite de vos projets. <br><br><br><br><br>Une capacité opérationnelle sans faille
+    Grâce à son équipe polyvalente, ses équipements adaptés et sa réactivité permanente, MARC & FERHOLE ENGINEERING SARL assure le bon déroulement de tous vos projets.
+    
+    Excellence opérationnelle assurée
+    Chez MARC & FERHOLE ENGINEERING SARL, nos experts, notre logistique et notre engagement 24h/24 font de chaque mission un succès.
+    
+    Votre projet, notre mission
+    Disponibles à tout moment, nos équipes et nos moyens techniques garantissent une exécution rapide et efficace de vos travaux.
+    
+    Mise en œuvre immédiate et efficace
+    Notre flotte d’engins, notre personnel qualifié et notre disponibilité continue font de MFES un partenaire fiable à chaque étape.</p>
 
-  <div class="carousel-container">
-    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-    <div class="carousel-slide">
-      <img src="./LES IMAGES DE TRAVAUX/02db064a-9534-408a-9956-5fab1beec443-e1743671367678-768x585.jpg" alt="">
-      <img src="./LES IMAGES DE TRAVAUX/428da20b-173f-4987-9a0d-5041ae936510-1-e1743671134384.jpg" alt="">
-      <img src="./LES IMAGES DE TRAVAUX/5a1a1417-d0a9-47ba-a79a-5fb2484db1ca-e1744065301772-768x565.jpg" alt="">
-      <img src="./LES IMAGES DE TRAVAUX/6d580da7-31aa-4496-a054-b7a5743fbca1-e1744065502235-768x614.jpg" alt="">
-      <img src="./LES IMAGES DE TRAVAUX/39-768x594.jpg" alt="">
-      <img src="./LES IMAGES DE TRAVAUX/53.43-768x576.jpeg" alt="">
-      <img src="./LES IMAGES DE TRAVAUX/width_800-4-768x434.jpg" alt="">
-    </div>
-    <button class="next" onclick="plusSlides(1)">&#10095;</button>
-  </div>
+  
 </section>
   <!-- Partie 5 : Grandes dates -->
   <section class="dates">
@@ -63,6 +61,19 @@
   <section class="realisations">
     <h2>Nos réalisations</h2>
     <p>Plus de 698 projets dans les domaines industriels, sanitation, BTP, etc.</p>
+    <div class="carousel-container">
+      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+      <div class="carousel-slide">
+        <img src="./LES IMAGES DE TRAVAUX/02db064a-9534-408a-9956-5fab1beec443-e1743671367678-768x585.jpg" alt="">
+        <img src="./LES IMAGES DE TRAVAUX/428da20b-173f-4987-9a0d-5041ae936510-1-e1743671134384.jpg" alt="">
+        <img src="./LES IMAGES DE TRAVAUX/5a1a1417-d0a9-47ba-a79a-5fb2484db1ca-e1744065301772-768x565.jpg" alt="">
+        <img src="./LES IMAGES DE TRAVAUX/6d580da7-31aa-4496-a054-b7a5743fbca1-e1744065502235-768x614.jpg" alt="">
+        <img src="./LES IMAGES DE TRAVAUX/39-768x594.jpg" alt="">
+        <img src="./LES IMAGES DE TRAVAUX/53.43-768x576.jpeg" alt="">
+        <img src="./LES IMAGES DE TRAVAUX/width_800-4-768x434.jpg" alt="">
+      </div>
+      <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
   </section>
 
   <!-- Partie 7 : Services et Activités -->
@@ -70,18 +81,180 @@
     <h2>Nos services</h2>
     <ul>
       <li>Parc auto et location</li>
+      <img src="./LES IMAGES DE TRAVAUX/auto7768_n-768x716.jpg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/parc auto188515_n.jpg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/auton-768x731.jpg" alt="">
+      <h2>Parc auto et location</h2>
+
+      <div class="carousel-container">
+        <div class="carousel-track" id="track">
+          <div class="carousel-slide">
+            <img src="./LES IMAGES DE TRAVAUX/auto7768_n-768x716.jpg" alt="Auto 1">
+          </div>
+          <div class="carousel-slide">
+            <img src="./LES IMAGES DE TRAVAUX/parc auto188515_n.jpg" alt="Auto 2">
+          </div>
+          <div class="carousel-slide">
+            <img src="./LES IMAGES DE TRAVAUX/auton-768x731.jpg" alt="Auto 3">
+          </div>
+        </div>
+      </div>
+    
+      <div class="buttons">
+        <button onclick="moveSlide(-1)">⬅️</button>
+        <button onclick="moveSlide(1)">➡️</button>
+      </div>
+    
+      <script>
+        let currentIndex = 0;
+        function moveSlide(direction) {
+          const track = document.getElementById('track');
+          const totalSlides = 3;
+          currentIndex += direction;
+          if (currentIndex < 0) currentIndex = totalSlides - 1;
+          if (currentIndex >= totalSlides) currentIndex = 0;
+          track.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+        }
+      </script>
+
+
       <li>Agence web & informatique</li>
+       <img src="./LES IMAGES DE TRAVAUX/informatiqueimages.jpeg" alt="">
+       <img src="./LES IMAGES DE TRAVAUX/agent webimages.jpeg" alt="">
+       <img src="./LES IMAGES DE TRAVAUX/i9nformatiqueimages.jpeg" alt="">
+       <img src="./LES IMAGES DE TRAVAUX/informatiqueimages.jpeg" alt="">
+       <h2>Agence web & informatique</h2>
+
+  <div class="carousel-container">
+    <div class="carousel-track" id="trackWeb">
+      <div class="carousel-slide">
+        <img src="./LES IMAGES DE TRAVAUX/informatiqueimages.jpeg" alt="Informatique 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="./LES IMAGES DE TRAVAUX/agent webimages.jpeg" alt="Informatique 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="./LES IMAGES DE TRAVAUX/i9nformatiqueimages.jpeg" alt="Informatique 3">
+      </div>
+      <div class="carousel-slide">
+        <img src="./LES IMAGES DE TRAVAUX/informatiqueimages.jpeg" alt="Informatique 4">
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="moveSlideWeb(-1)">⬅️</button>
+    <button onclick="moveSlideWeb(1)">➡️</button>
+  </div>
+
+  <script>
+    let indexWeb = 0;
+    function moveSlideWeb(direction) {
+      const track = document.getElementById('trackWeb');
+      const total = 4;
+      indexWeb += direction;
+      if (indexWeb < 0) indexWeb = total - 1;
+      if (indexWeb >= total) indexWeb = 0;
+      track.style.transform = 'translateX(' + (-indexWeb * 100) + '%)';
+    }
+  </script>
+
       <li>Distribution & logistique</li>
+      <img src="./LES IMAGES DE TRAVAUX/lgistique 1images.jpeg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/logistiqueimages.jpeg" alt="">
+      <h2>Distribution & logistique</h2>
+
+  <div class="carousel-container">
+    <div class="carousel-track" id="trackLog">
+      <div class="carousel-slide">
+        <img src="./LES IMAGES DE TRAVAUX/lgistique 1images.jpeg" alt="Logistique 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="./LES IMAGES DE TRAVAUX/logistiqueimages.jpeg" alt="Logistique 2">
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="moveSlideLog(-1)">⬅️</button>
+    <button onclick="moveSlideLog(1)">➡️</button>
+  </div>
+
+  <script>
+    let indexLog = 0;
+    function moveSlideLog(direction) {
+      const track = document.getElementById('trackLog');
+      const total = 2;
+      indexLog += direction;
+      if (indexLog < 0) indexLog = total - 1;
+      if (indexLog >= total) indexLog = 0;
+      track.style.transform = 'translateX(' + (-indexLog * 100) + '%)';
+    }
+  </script>
+
+
+
+
       <li>Formations professionnelles</li>
+      <img src="./LES IMAGES DE TRAVAUX/formation 25images.jpeg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/formation 2images.jpeg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/formationimaaages.jpeg" alt="">
+      <img src="./LES IMAGES DE TRAVAUX/formationimages.jpeg" alt="">
+      <h2>Formations professionnelles</h2>
+
+      <div class="carousel-container">
+        <div class="carousel-track" id="trackFormation">
+          <div class="carousel-slide">
+            <img src="./LES IMAGES DE TRAVAUX/formation 25images.jpeg" alt="Formation 1">
+          </div>
+          <div class="carousel-slide">
+            <img src="./LES IMAGES DE TRAVAUX/formation 2images.jpeg" alt="Formation 2">
+          </div>
+          <div class="carousel-slide">
+            <img src="./LES IMAGES DE TRAVAUX/formationimaaages.jpeg" alt="Formation 3">
+          </div>
+          <div class="carousel-slide">
+            <img src="./LES IMAGES DE TRAVAUX/formationimages.jpeg" alt="Formation 4">
+          </div>
+        </div>
+      </div>
+    
+      <div class="buttons">
+        <button onclick="moveSlideFormation(-1)">⬅️</button>
+        <button onclick="moveSlideFormation(1)">➡️</button>
+      </div>
+    
+      <script>
+        let indexFormation = 0;
+        function moveSlideFormation(direction) {
+          const track = document.getElementById('trackFormation');
+          const total = 4;
+          indexFormation += direction;
+          if (indexFormation < 0) indexFormation = total - 1;
+          if (indexFormation >= total) indexFormation = 0;
+          track.style.transform = 'translateX(' + (-indexFormation * 100) + '%)';
+        }
+      </script>
+    
     </ul>
   </section>
 
   <!-- Partie 8 : Témoignages et partenaires -->
   <section class="temoignages">
+    <h2>Notre crédibilité, leur confiance</h2>
+    <p> Plusieurs partenaires locaux et internationaux nous accompagnent :</p>
+  </section>
+  <section class="confiance">
     <h2>Ils nous font confiance</h2>
     <p>Plusieurs partenaires locaux et internationaux nous accompagnent.</p>
-  </section>
 
+    <div class="logos">
+      <img src="./LES IMAGES DE TRAVAUX/logo 1images.jpeg" alt="Partenaire 1">
+      <img src="./LES IMAGES DE TRAVAUX/logo2images.png" alt="Partenaire 2">
+      <img src="./LES IMAGES DE TRAVAUX/logo3téléchargement.jpeg" alt="Partenaire 3">
+      <img src="./LES IMAGES DE TRAVAUX/logo4images.png" alt="Partenaire 4">
+    </div>
+  </section>
   <!-- Partie 9 : Rejoignez-nous -->
   <section class="recrutement">
     <h2>Rejoignez-nous</h2>
@@ -89,7 +262,7 @@
   </section>
 
   <!-- Partie 10 : Contact et footer -->
-  <footer class="contact" style="background-color: blue;">
+  <footer class="contact" style="background-color: rgb(41, 41, 204);">
     <h2>Contact</h2>
     <p><strong>MFES CI :</strong> +225 2735 9880 25 / Marcory, Abidjan</p>
     <p><strong>MFES USA :</strong> 30 N Gould St, Sheridan, WY</p>
